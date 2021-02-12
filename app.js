@@ -10,7 +10,7 @@ GAME FUNCTION:
 // Game Values
 let min = parseInt(prompt("Please select Minimum Number"));
 let max = parseInt(prompt("Please select Maximum Number"));
-if (min > max && max < min) {
+if (min > max || max < min) {
   alert("Please enter valid numbers !!!, Please Select again.");
   min = parseInt(prompt("Please select Number 1"));
   max = parseInt(prompt("Please select Number 2"));
