@@ -7,8 +7,6 @@ GAME FUNCTION:
 - Let player choose to play again
 */
 
-alert("Welcome to Number Guesser, Please pick Two Numbers, Minimum & Maximum.");
-
 // Game Values
 let min = parseInt(prompt("Please select Minimum Number"));
 let max = parseInt(prompt("Please select Maximum Number"));
