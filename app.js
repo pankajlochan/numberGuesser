@@ -15,9 +15,7 @@ if (
   isNaN(max) ||
   min > max ||
   max < min ||
-  min === max ||
-  min != "" ||
-  max != ""
+  min === max
 ) {
   alert("Please enter valid numbers !!!, Please Select again.");
   min = parseInt(prompt("Please select Minimum Number"));
