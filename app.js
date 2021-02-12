@@ -10,10 +10,18 @@ GAME FUNCTION:
 // Game Values
 let min = parseInt(prompt("Please select Minimum Number"));
 let max = parseInt(prompt("Please select Maximum Number"));
-if (min > max || max < min) {
+if (
+  isNaN(min) ||
+  isNaN(max) ||
+  min > max ||
+  max < min ||
+  min === max ||
+  min != "" ||
+  max != ""
+) {
   alert("Please enter valid numbers !!!, Please Select again.");
-  min = parseInt(prompt("Please select Number 1"));
-  max = parseInt(prompt("Please select Number 2"));
+  min = parseInt(prompt("Please select Minimum Number"));
+  max = parseInt(prompt("Please select Maximum Number"));
 }
 
 let winningNum = getRandomNum(min, max);
